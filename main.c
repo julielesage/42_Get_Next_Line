@@ -38,6 +38,8 @@ int	main(int ac, char **av)
 	close(fd);
 /*	while (1)
 	{
-	}*/
+	}
+pour a cote entrer Leaks a.out pendant la boucle 
+ou voir avec Valgrind + nomfichier apres compilation d un programme avec un main.c*/
 	return (0);
 }
