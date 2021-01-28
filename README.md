@@ -1,7 +1,8 @@
 # 42_Get_Next_Line
 GNL lit un fichier fd, ligne par ligne, ce programme utilise de nombreux "malloc" sans leak et une variable statique
 
-Correction avec <a href="https://github.com/Mazoise/42TESTERS-GNL.git">GNLKiller</a> ou <a href="https://github.com/charMstr/GNL_lover">GNLLover</a>.   
+Correction avec <a href="https://github.com/Mazoise/42TESTERS-GNL.git">GNLKiller</a> ou <a href="https://github.com/charMstr/GNL_lover">GNLLover</a>.  
+Vérifier le cas fd < 0 et fd = STDIN_FILENO 
 
 ## TESTER LES LEAKS : 
 
@@ -11,7 +12,7 @@ While(1){}
 
 gcc main + tous les fichiers .c .h puis ./a.out + le text
 
-A cote taper :  
+A cote taper :  leaks a.out
 
 Ou dans main : system(“leaks a.out”) 
 
